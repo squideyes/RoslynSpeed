@@ -1,0 +1,560 @@
+﻿using Common;
+
+namespace UsingCodeAnalysis
+{
+    public class Cohort0000_Entity0000 : Genome
+    {
+        public Cohort0000_Entity0000(KnownAs knownAs, Settings settings)
+            : base(knownAs, settings)
+        {
+        }
+        public override void Execute()
+        {
+            while (!IsFinished())
+            {
+                TurnRight();
+                Move();
+            }
+        }
+    }
+	public class Cohort0000_Entity0001 : Genome
+    {
+        public Cohort0000_Entity0001(KnownAs knownAs, Settings settings)
+            : base(knownAs, settings)
+        {
+        }
+        public override void Execute()
+        {
+            while (!IsFinished())
+            {
+                Move();
+                if (IsFacingFood())
+                {
+                    if (IsFacingGap())
+                    {
+                        TurnRight();
+                    }
+                    else
+                    {
+                        if (IsFacingFood())
+                        {
+                            TurnRight();
+                        }
+                        else
+                        {
+                            if (IsFacingFood())
+                            {
+                                TurnLeft();
+                            }
+                            else
+                            {
+                                TurnLeft();
+                            }
+                        }
+                        TurnLeft();
+                        Move();
+                    }
+                }
+                else
+                {
+                    Move();
+                }
+            }
+        }
+    }
+    public class Cohort0000_Entity0002 : Genome
+    {
+        public Cohort0000_Entity0002(KnownAs knownAs, Settings settings)
+            : base(knownAs, settings)
+        {
+        }
+        public override void Execute()
+        {
+            while (!IsFinished())
+            {
+                if (IsFacingFood())
+                {
+                    if (IsFacingGap())
+                    {
+                        if (IsFacingFood())
+                        {
+                            TurnLeft();
+                        }
+                        else
+                        {
+                            TurnLeft();
+                        }
+                        TurnLeft();
+                        TurnLeft();
+                        TurnLeft();
+                        TurnRight();
+                    }
+                    else
+                    {
+                        if (IsFacingFood())
+                        {
+                            TurnLeft();
+                            Move();
+                            TurnLeft();
+                        }
+                        else
+                        {
+                            TurnLeft();
+                            TurnLeft();
+                            TurnLeft();
+                        }
+                    }
+                    TurnRight();
+                }
+                else
+                {
+                    TurnRight();
+                }
+                TurnLeft();
+            }
+        }
+    }
+    public class Cohort0000_Entity0003 : Genome
+    {
+        public Cohort0000_Entity0003(KnownAs knownAs, Settings settings)
+            : base(knownAs, settings)
+        {
+        }
+        public override void Execute()
+        {
+            while (!IsFinished())
+            {
+                if (IsFacingFood())
+                {
+                    if (IsFacingFood())
+                    {
+                        TurnRight();
+                    }
+                    else
+                    {
+                        TurnLeft();
+                        Move();
+                        if (IsFacingFood())
+                        {
+                            Move();
+                            Move();
+                        }
+                        else
+                        {
+                            if (IsFacingFood())
+                            {
+                                Move();
+                            }
+                            else
+                            {
+                                Move();
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    TurnRight();
+                }
+                TurnRight();
+            }
+        }
+    }
+    public class Cohort0000_Entity0004 : Genome
+    {
+        public Cohort0000_Entity0004(KnownAs knownAs, Settings settings)
+            : base(knownAs, settings)
+        {
+        }
+        public override void Execute()
+        {
+            while (!IsFinished())
+            {
+                if (IsFacingFood())
+                {
+                    if (IsFacingGap())
+                    {
+                        if (IsFacingGap())
+                        {
+                            Move();
+                        }
+                        else
+                        {
+                            TurnRight();
+                        }
+                        if (IsFacingFood())
+                        {
+                            TurnLeft();
+                        }
+                        else
+                        {
+                            Move();
+                        }
+                        TurnLeft();
+                        TurnLeft();
+                        Move();
+                        Move();
+                        Move();
+                        TurnRight();
+                        Move();
+                    }
+                    else
+                    {
+                        TurnLeft();
+                    }
+                }
+                else
+                {
+                    TurnRight();
+                }
+            }
+        }
+    }
+    public class Cohort0000_Entity0005 : Genome
+    {
+        public Cohort0000_Entity0005(KnownAs knownAs, Settings settings)
+            : base(knownAs, settings)
+        {
+        }
+        public override void Execute()
+        {
+            while (!IsFinished())
+            {
+                if (IsFacingFood())
+                {
+                    Move();
+                    TurnLeft();
+                    if (IsFacingFood())
+                    {
+                        TurnLeft();
+                    }
+                    else
+                    {
+                        TurnRight();
+                    }
+                }
+                else
+                {
+                    if (IsFacingGap())
+                    {
+                        TurnLeft();
+                        TurnLeft();
+                        Move();
+                        TurnLeft();
+                        Move();
+                        Move();
+                    }
+                    else
+                    {
+                        Move();
+                    }
+                }
+                TurnRight();
+            }
+        }
+    }
+    public class Cohort0000_Entity0006 : Genome
+    {
+        public Cohort0000_Entity0006(KnownAs knownAs, Settings settings)
+            : base(knownAs, settings)
+        {
+        }
+        public override void Execute()
+        {
+            while (!IsFinished())
+            {
+                Move();
+                if (IsFacingGap())
+                {
+                    if (IsFacingGap())
+                    {
+                        TurnLeft();
+                        TurnLeft();
+                        if (IsFacingFood())
+                        {
+                            TurnLeft();
+                        }
+                        else
+                        {
+                            TurnLeft();
+                        }
+                        if (IsFacingGap())
+                        {
+                            Move();
+                            Move();
+                        }
+                        else
+                        {
+                            TurnLeft();
+                            Move();
+                        }
+                    }
+                    else
+                    {
+                        if (IsFacingFood())
+                        {
+                            TurnLeft();
+                            TurnLeft();
+                            TurnLeft();
+                        }
+                        else
+                        {
+                            if (IsFacingFood())
+                            {
+                                TurnRight();
+                            }
+                            else
+                            {
+                                TurnRight();
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    TurnLeft();
+                    TurnLeft();
+                }
+            }
+        }
+    }
+    public class Cohort0000_Entity0007 : Genome
+    {
+        public Cohort0000_Entity0007(KnownAs knownAs, Settings settings)
+            : base(knownAs, settings)
+        {
+        }
+        public override void Execute()
+        {
+            while (!IsFinished())
+            {
+                if (IsFacingGap())
+                {
+                    TurnLeft();
+                }
+                else
+                {
+                    if (IsFacingFood())
+                    {
+                        TurnRight();
+                    }
+                    else
+                    {
+                        if (IsFacingFood())
+                        {
+                            TurnRight();
+                            if (IsFacingFood())
+                            {
+                                Move();
+                            }
+                            else
+                            {
+                                TurnLeft();
+                            }
+                            if (IsFacingFood())
+                            {
+                                TurnLeft();
+                            }
+                            else
+                            {
+                                TurnLeft();
+                            }
+                        }
+                        else
+                        {
+                            Move();
+                        }
+                    }
+                }
+            }
+        }
+    }
+    public class Cohort0000_Entity0008 : Genome
+    {
+        public Cohort0000_Entity0008(KnownAs knownAs, Settings settings)
+            : base(knownAs, settings)
+        {
+        }
+        public override void Execute()
+        {
+            while (!IsFinished())
+            {
+                if (IsFacingGap())
+                {
+                    if (IsFacingGap())
+                    {
+                        if (IsFacingGap())
+                        {
+                            TurnRight();
+                        }
+                        else
+                        {
+                            if (IsFacingFood())
+                            {
+                                Move();
+                            }
+                            else
+                            {
+                                Move();
+                            }
+                        }
+                        TurnLeft();
+                        Move();
+                        if (IsFacingGap())
+                        {
+                            TurnLeft();
+                        }
+                        else
+                        {
+                            TurnLeft();
+                        }
+                        TurnRight();
+                    }
+                    else
+                    {
+                        TurnRight();
+                    }
+                    if (IsFacingGap())
+                    {
+                        if (IsFacingFood())
+                        {
+                            if (IsFacingGap())
+                            {
+                                if (IsFacingGap())
+                                {
+                                    Move();
+                                }
+                                else
+                                {
+                                    Move();
+                                }
+                            }
+                            else
+                            {
+                                TurnRight();
+                            }
+                        }
+                        else
+                        {
+                            Move();
+                            Move();
+                            Move();
+                            TurnLeft();
+                            Move();
+                        }
+                    }
+                    else
+                    {
+                        if (IsFacingGap())
+                        {
+                            TurnLeft();
+                            Move();
+                            TurnLeft();
+                            TurnRight();
+                            TurnLeft();
+                            TurnLeft();
+                            Move();
+                        }
+                        else
+                        {
+                            TurnLeft();
+                        }
+                    }
+                    TurnLeft();
+                }
+                else
+                {
+                    if (IsFacingGap())
+                    {
+                        if (IsFacingGap())
+                        {
+                            TurnLeft();
+                        }
+                        else
+                        {
+                            if (IsFacingFood())
+                            {
+                                TurnLeft();
+                            }
+                            else
+                            {
+                                Move();
+                            }
+                        }
+                        Move();
+                        Move();
+                        TurnLeft();
+                        Move();
+                        TurnLeft();
+                        TurnRight();
+                    }
+                    else
+                    {
+                        Move();
+                    }
+                    if (IsFacingGap())
+                    {
+                        TurnLeft();
+                    }
+                    else
+                    {
+                        if (IsFacingGap())
+                        {
+                            if (IsFacingGap())
+                            {
+                                TurnLeft();
+                            }
+                            else
+                            {
+                                if (IsFacingFood())
+                                {
+                                    Move();
+                                }
+                                else
+                                {
+                                    TurnLeft();
+                                }
+                            }
+                        }
+                        else
+                        {
+                            if (IsFacingGap())
+                            {
+                                TurnLeft();
+                                Move();
+                            }
+                            else
+                            {
+                                Move();
+                                Move();
+                                Move();
+                            }
+                        }
+                    }
+                    TurnRight();
+                }
+            }
+        }
+    }
+    public class Cohort0000_Entity0009 : Genome
+    {
+        public Cohort0000_Entity0009(KnownAs knownAs, Settings settings)
+            : base(knownAs, settings)
+        {
+        }
+        public override void Execute()
+        {
+            while (!IsFinished())
+            {
+                if (IsFacingFood())
+                {
+                    Move();
+                }
+                else
+                {
+                    TurnRight();
+                }
+            }
+        }
+    }
+}
